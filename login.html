@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Login Page</title>
+        <style>
+            body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+            header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: darkblue;
+            box-shadow: 0 2px 5px rgba(0, 0, 0);
+            max-height: 10%;
+            height: 100px;
+            width: 100%;
+            }
+            header a{
+            font-size: large;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.749);
+            font-weight: bold;
+            margin-left: 20px;
+            }
+            .login{
+            display: inline-block;
+            align-items: center;
+            justify-content: space-around;
+            padding: 60px;
+            background-color:darkblue;
+            background-image: linear-gradient(darkblue, rgb(42, 42, 42));
+            width: 100%;
+            
+            }
+            .login label{
+            color: rgb(192, 192, 198);
+            }
+            .login input{
+            color: black;
+            width: 500px;
+            height: 50px;
+            background-color: rgb(255, 255, 255);
+            border-color: rgb(5, 11, 99);
+            border-width: 1px;
+            }
+            .login fieldset{
+                color: azure;
+                width: 50%;
+            }
+            .login legend{
+                color: azure;
+            }
+            .login-image img{
+                display: inline-block;
+                justify-content: right;
+            }
+            .login-text> h1{
+                font-size: larger;
+                color: gray;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                max-width: 50%;
+            }
+            .forget a{
+            text-decoration: none;
+            color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+            .forget a:hover{
+                color: rgb(96, 52, 96);
+            }
+            .create a{
+            text-decoration: none;
+            color: rgb(22, 15, 198);
+            font-family: Arial, Helvetica, sans-serif;
+            }
+            .create a:hover{
+                color: rgb(96, 52, 96);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="hero-image">
+                <a href="intel.html"><img src="img/Black_And_White_Aesthetic_Minimalist_Modern_Simple_Typography_Coconut_Cosmetics_Logo-removebg-preview.png" alt="logo" style="width: 250px; height: 250px;"></a>
+            </div>
+        </header>
+        
+        <div class="login">
+            <div class="login-text">
+        <h1>Continue journey here with us at DevHaven</h1><br><br>
+            </div>
+        <form method="get">
+            <fieldset>
+                <legend>Login</legend>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+            <div class="forget">
+                <a href="#" target="_blank">Forgot Password</a>
+                </div>
+            <input style="height: 50px; border-radius: 20px; background-color: rgb(75, 38, 75); width: 500px; font-weight: 400; font-size: medium; border-color:  rgb(75, 38, 75);" type="submit" value="Login">
+        </fieldset>
+        </form>
+        <div class="create">
+            <a href="#" target="_blank">Sign Up</a>
+        </div>
+        <p style="color: gray; font-size: small;">By clicking Continue, you are agreeing to <a href="#">DevHaven's User Agreement, Privacy Policy</a> and <a href="#">Cookie Policy</a></p>
+        </div>
+    
+    </body>
+</html>

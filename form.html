@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        background-color: rgb(16, 4, 105);
+        box-shadow: 0 2px 5px rgba(0, 0, 0);
+        max-height: 10%;
+        height: 100px;
+    }
+    .forms{
+            background-color:darkblue;
+            background-image: linear-gradient(darkblue, black);
+            color: aliceblue;
+    }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hero-image">
+            <a href="intel.html"><img src="img/Black_And_White_Aesthetic_Minimalist_Modern_Simple_Typography_Coconut_Cosmetics_Logo-removebg-preview.png" alt="logo" style="width: 250px; height: 250px;""></a>
+        </div>
+    </header>
+    <div class="forms">
+    <form id="survey" method="get">
+        <fieldset form="survey">
+            <legend>Survey</legend>
+            <label for="name">Name(required)</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="age">Age</label><br>
+            <input type="text" id="age" name="age"><br>
+            <input type="radio" id="occupation" name="occupation">
+            <label for="occupation">Yes</label><br>
+            <input type="radio" id="occupation" name="occupation">
+            <label for="occupation">No</label><br>
+            <label for="address">Address(required)</label><br>
+            <input type="text" id="address" name="address" required maxlength="20" minlength="5" placeholder="111 FakeStreet, Manitoba, Canada"><br>
+            <label for="pet">Pet</label><br>
+            <input type="text" id="pet" name="pet"><br>
+            <label for="gender">Gender</label><br>
+            <input type="text" id="gender" name="gender"><br>
+            <label for="hobbies">Hobbies</label><br>
+            <input type="text" id="hobbies" name="hobbies"><br>
+            <label for="car">Car driven</label><br>
+            <select id="car" name="car">
+                <option value="honda">Honda</option>
+                <option value="volvo">Volvo</option>
+                <option value="toyota">Toyota</option>
+            </select><br>
+            <label for="story">Tell us your Story</label><br>
+            <textarea id="story" name="story"
+                        rows="6"  cols="33">
+                    </textarea><br>
+            <input type="checkbox"  id="citizen" name="citizen">
+            <label for="citizen">I am a Citizen</label><br>
+            <input type="checkbox" id="not-a-citizen" name="not-a-citizen">
+            <label for="not-a-citizen">I am not a Citizen</label><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>

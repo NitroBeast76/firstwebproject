@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevHaven</title>
     <style>
-        /*This is the defaul font, and shape of the page*/
         body{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        } 
-        /*This is all the stuff in the ehader and it has the color of the ehader, teh shadow, the height, where the items are whether down or up in this case in the center. alos has the padding which is teh tottakl socae allowed ghere*/
+        }
         header{
             display: flex;
             justify-content: space-between;
@@ -22,7 +20,6 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0);
             max-height: 10%;
         }
-        /*this is teh font size for the links in the header and also*/
         header a{
             font-size: large;
             text-decoration: none;
@@ -30,35 +27,38 @@
             font-weight: bold;
             margin-left: 20px;
         }
-        header form{
-            margin-left: 20px;
-            display: inline-block;
-        }
         header a:hover{
             color:rgba(129, 10, 129, 0.655)
         }
-        .hero{
+        table, th, td {
+            border: 1px solid rgba(120, 120, 120, 0.748);
+        }
+        table tr{
+            color: grey;
+        }
+        .table{
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 60px;
             background-color:darkblue;
             background-image: linear-gradient(darkblue, rgb(42, 42, 42));
+            width: 100%;
         }
-        .hero-text{ 
+        .table-text{ 
             max-width: 50%;
         }
-        .hero-text h1{
+        .table-text h2{
         font-size: larger;
         color: rgb(186, 184, 184);
         margin-bottom: 20px;
         }
-        .hero-text p{
+        .table-text p{
             font-size: medium;
             color: rgb(122, 121, 121);
             margin-bottom: 30px;
         }
-        .hero-text .btn{
+        .table-text .btn{
             display: inline-block;
             padding: 10px 20px;
             background-color: rgb(7, 7, 167);
@@ -67,13 +67,13 @@
             border-radius: 5px;
             margin-right: 15px;
         }
-        .hero-text .btn:hover{
+        .table-text .btn:hover{
             background-color: rgb(9, 9, 171);
             color: rgba(240, 248, 255, 0.808);
         }
         .hero-image img{
-            width: 90%;
-            height: 10%;
+            width: 80%;
+            height: 20%;
             border-radius: 10px;
         }
         footer{
@@ -95,30 +95,41 @@
             <a href="intel.html"><img src="img/Black_And_White_Aesthetic_Minimalist_Modern_Simple_Typography_Coconut_Cosmetics_Logo-removebg-preview.png" alt="logo" style="width: 250px; height: 250px;""></a>
         </div>
         <nav>
-            <form id="name">
-                <label for="search"><!--<img src="img/aaz0vkd48.webp" alt="Search"><!--></label>
-                <input type="search" id="search" name="search" placeholder="Search">
-            </form>
             <a href="intel.html" target="_blank">Home</a>
             <a href="about-us.html" target="_blank">About Us</a>
             <a href="contact-us.html" target="_blank">Contact US</a>
             <a href="services.html" target="_blank">Services</a>
         </nav>
     </header>
-    <!--places with the hero stuff and text # is also placeholder-->
-    <section class="hero">
-        <div class="hero-text">
-            <h1>DevHaven</h1>
-            <p>Bringing Code to the forefront</p>
-            <a href="login.html" target="_blank" class="btn">Log In</a>
-            <a href="contact-us.html" target="_blank" class="btn">Contact Us</a>
-        </div>
-        <div class="hero-image">
-        <img src="img/Website image.png" alt="A laptop with lines of code on it">
+    <!--places with the heor shit and text # is also placeholder-->
+    <section class="table">
+        <div class="table-text">
+            <h2>Our Primary Staff and Thier Contacts</h2>
+            <p>This is a list of our most trustes staff contact for your needs</p>
+            <table>
+                <tr>
+                    <th>Staff</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td>Alfred King</td>
+                    <td>xxx-xxx-xxx</td>
+                    <td>alfredking@email.com</td>
+                </tr>
+                <tr>
+                    <td>Cante Gunti</td>
+                    <td>xxx-xxx-xxx</td>
+                    <td>cantegunti@email.com</td>
+                </tr>
+                <tr><td>Alice Buky</td>
+                    <td>xxx-xxx-xxx</td>
+                    <td>alicebuky@email.com</td></tr>
+            </table>
         </div>
     </section>
 
-    <!--Beginng of the footer stuff-->
+    <!--Beginng of the footer shit-->
     <footer>
         <p>&copy; 2025 DevHaven. All Rights Reserved. |<a href="#privacy" target="_blank">Privacy Policy</a></p>
     </footer>
